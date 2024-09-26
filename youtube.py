@@ -56,9 +56,10 @@ def main():
     title = 'TITLE_OF_YOUR_VIDEO'
     description = 'DESCRIPTION'
     category = '22'  # See https://developers.google.com/youtube/v3/docs/videoCategories/list
-    keywords = ['keyword1', 'keyword2']
+    # Add keywords to to your video
+    ##keywords = ['keyword1', 'keyword2']
     
-    upload_video(youtube, file_path, title, description, category, keywords)
+    upload_video(youtube, file_path, title, description, category, keywords=None)
 
 if __name__ == '__main__':
     main()
